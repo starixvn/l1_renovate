@@ -1,15 +1,11 @@
 module.exports = {
   platform: "gitlab",
-  endpoint: "https://gitlab.com/api/v4/",
-  baseBranches: ["master"],
-  labels: ["renovate"],
-  rebaseWhen: "auto",
-  automerge: true,
-  automergeType: "branch",
-  semanticCommits: true,
-  major: {
-    automerge: false,
+  endpoint: "https://git3.nexdev.net/api/v4/",
+  token: process.env.RENOVATE_TOKEN,
+  labels: ["renovate", "dependencies", "automated"],
+  onboarding: true,
+  onboardingConfig: {
+    extends: ["config:base"],
   },
   repositories: ["l1/game-client-mobi"],
-  extends: ["config:base", ":pinAllExceptPeerDependencies"],
 };
