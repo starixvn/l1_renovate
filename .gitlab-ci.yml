@@ -1,14 +1,10 @@
-image:
-  name: renovate/renovate
-  entrypoint: [""]
-
-stages:
-  - renovate
-
 renovate:
-  stage: renovate
+  image: registry.nexdev.net:5050/docker/tools/renovate:31.97.2-slim
   script:
-    - ln -sF $CI_PROJECT_DIR/config.js /usr/src/app/
-    - renovate
-  rules:
+    - docker-entrypoint.sh
+  rule:
     - when: manual
+  artifacts:
+    when: always
+    paths:
+      - renovate.log.json
