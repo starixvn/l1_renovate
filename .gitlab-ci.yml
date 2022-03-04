@@ -5,7 +5,7 @@ renovate:
     DOCKER_USERNAME: $CI_REGISTRY_USER # needed to allow Renovate to check against GitLabs own Docker container registry
     DOCKER_PASSWORD: $CI_REGISTRY_PASSWORD
   image:
-    name: renovate/renovate:23.66
+    name: registry.nexdev.net:5050/docker/tools/renovate:31.97.2-slim
     entrypoint: [""]
   script:
     - ln -sF $CI_PROJECT_DIR/config.js /usr/src/app/
