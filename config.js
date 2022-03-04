@@ -8,5 +8,5 @@ module.exports = {
   onboardingConfig: {
     extends: ["config:base"],
   },
-  repositories: ["l1/game-service/night-club"],
+  repositories: ["l1/game-services/night-club"],
 };
