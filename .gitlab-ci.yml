@@ -1,5 +1,5 @@
 image:
-  name: registry.nexdev.net:5050/docker/tools/renovate:31.97.2-slim
+  name: renovate/renovate
   entrypoint: [""]
 
 stages:
