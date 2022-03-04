@@ -2,7 +2,7 @@ renovate:
   image: registry.nexdev.net:5050/docker/tools/renovate:31.97.2-slim
   script:
     - docker-entrypoint.sh
-  rule:
+  rules:
     - when: manual
   artifacts:
     when: always
