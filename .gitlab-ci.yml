@@ -10,6 +10,5 @@ renovate:
   script:
     - ln -sF $CI_PROJECT_DIR/config.js /usr/src/app/
     - renovate
-
   rules:
     - when: manual
