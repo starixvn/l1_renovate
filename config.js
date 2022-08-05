@@ -7,10 +7,13 @@ module.exports = {
   assignees: ["elton.ton"],
   onboardingConfig: {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    extends: ["config:base"],
+    extends: ["config:base", ":dependencyDashboard"],
     packageRules: [
       {
-        updateTypes: ["minor", "major", "patch", "pin", "digest"],
+        excludePackagePatterns: ["*"],
+      },
+      {
+        matchUpdateTypes: ["minor", "major", "patch", "pin", "digest"],
         matchPackageNames: ["sc-game-base"],
       },
     ],
