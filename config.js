@@ -9,4 +9,11 @@ module.exports = {
     extends: ["local>l1/renovate"],
   },
   repositories: ["l1/game-services/sedie-service"],
+  hostRules: [
+    {
+      matchHost: "npm.lumigame.com",
+      hostType: "npm",
+      token: "mMJqIbXHrN2TR1whwCaZh5BERPc7kHDHfgBAYQ7GYJw=",
+    },
+  ],
 };
