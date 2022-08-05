@@ -7,17 +7,14 @@ module.exports = {
   assignees: ["elton.ton"],
   onboardingConfig: {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    extends: ["config:base", ":dependencyDashboard"],
+    extends: ["config:base"],
     packageRules: [
       {
-        excludePackagePatterns: ["*"],
-      },
-      {
         matchUpdateTypes: ["minor", "major", "patch", "pin", "digest"],
-        matchPackageNames: ["sc-game-base"],
+        matchPackageNames: ["sc-game-base", "sc-base-apis"],
       },
     ],
+    dependencyDashboard: true
   },
-  repositories: ["l1/game-services/sedie-service"],
   npmrc: "registry=http://npm.lumigame.com/",
 };
