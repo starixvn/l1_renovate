@@ -14,6 +14,7 @@ module.exports = {
       matchHost: "npm.lumigame.com",
       hostType: "npm",
       token: "mMJqIbXHrN2TR1whwCaZh5BERPc7kHDHfgBAYQ7GYJw=",
+      authType: "Basic",
     },
   ],
 };
