@@ -1,13 +1,13 @@
 module.exports = {
   platform: "gitlab",
   endpoint: "https://git3.nexdev.net/api/v4/",
-  token: process.env.RENOVATE_TOKEN,
+  token: "_egQ2_HMtksSFBh9rJzp",
   renovateFork: true,
   logFile: "renovate.log.json",
   baseBranches: ["master"],
-  assignees: ["alvin.nguyen"],
+  assignees: ["elton.ton"],
   onboardingConfig: {
     extends: ["config:base"],
   },
-  repositories: ["l1/game-services/night-club"],
+  repositories: ["l1/game-services/sedie-service"],
 };
