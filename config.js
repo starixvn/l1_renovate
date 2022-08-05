@@ -7,7 +7,12 @@ module.exports = {
   baseBranches: ["master"],
   assignees: ["elton.ton"],
   onboardingConfig: {
-    extends: ["config:base"],
+    extends: ["local>l1/renovate"],
   },
   repositories: ["l1/game-services/sedie-service"],
+  hostRules: [
+    {
+      matchHost: "npm.lumigame.com",
+    },
+  ],
 };
