@@ -17,4 +17,5 @@ module.exports = {
       authType: "Basic",
     },
   ],
+  npmrc: "registry=http://npm.lumigame.com/"
 };
