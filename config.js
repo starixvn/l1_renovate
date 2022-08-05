@@ -6,8 +6,15 @@ module.exports = {
   logFile: "renovate.log.json",
   assignees: ["elton.ton"],
   onboardingConfig: {
-    extends: ["local>l1/renovate-bot/renovate-runner:renovate.json"],
+    $schema: "https://docs.renovatebot.com/renovate-schema.json",
+    extends: ["config:base"],
+    packageRules: [
+      {
+        updateTypes: ["minor", "major", "patch", "pin", "digest"],
+        matchPackageNames: ["sc-game-base"],
+      },
+    ],
   },
   repositories: ["l1/game-services/sedie-service"],
-  npmrc: "registry=http://npm.lumigame.com/"
+  npmrc: "registry=http://npm.lumigame.com/",
 };
