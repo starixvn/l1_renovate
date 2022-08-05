@@ -4,15 +4,9 @@ module.exports = {
   token: "_egQ2_HMtksSFBh9rJzp",
   renovateFork: true,
   logFile: "renovate.log.json",
-  baseBranches: ["master"],
   assignees: ["elton.ton"],
   onboardingConfig: {
     extends: ["local>l1/renovate"],
   },
   repositories: ["l1/game-services/sedie-service"],
-  hostRules: [
-    {
-      matchHost: "npm.lumigame.com",
-    },
-  ],
 };

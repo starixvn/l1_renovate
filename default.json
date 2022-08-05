@@ -9,5 +9,11 @@
       "automerge": false,
       "matchPackageNames": ["sc-game-base"]
     }
+  ],
+  "hostRules": [
+    {
+      "matchHost": "npm.lumigame.com",
+      "hostType": "npm"
+    }
   ]
 }
