@@ -10,8 +10,10 @@ module.exports = {
     extends: ["config:base"],
     packageRules: [
       {
+        matchDepTypes: ["dependencies"],
         matchUpdateTypes: ["minor", "major", "patch", "pin", "digest"],
-        matchPackageNames: ["sc-game-base", "sc-base-apis"],
+        matchPackageNames: ["sc-game-base"],
+        excludePackageNames: ["*"]
       },
     ],
     dependencyDashboard: true
