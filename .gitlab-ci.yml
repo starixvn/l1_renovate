@@ -1,5 +1,5 @@
 include:
     - project: 'l1/renovate-bot/renovate-runner'
-      file: '/templates/renovate.gitlab-ci.yml'
+      file: '/templates/renovate-dind.gitlab-ci.yml'
 variables: 
   DOCKER_TLS_CERTDIR: ""
