@@ -4,3 +4,4 @@ include:
     ref: "main"
 variables: 
   RENOVATE_ONBOARDING_CONFIG: ""
+  DOCKER_HOST: tcp://docker:2375
