@@ -8,7 +8,7 @@
     },
     {
       "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["minor", "major", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "major", "patch", "digest"],
       "matchPackageNames": ["sc-game-base"],
       "excludePackageNames": ["*"]
     }
