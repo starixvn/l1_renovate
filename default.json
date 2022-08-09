@@ -3,6 +3,10 @@
   "extends": ["config:base"],
   "packageRules": [
     {
+      "matchDepTypes": ["devDependencies"],
+      "excludePackageNames": ["*"]
+    },
+    {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "pin", "digest"],
       "matchPackageNames": ["sc-game-base"],
