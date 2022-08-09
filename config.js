@@ -6,17 +6,7 @@ module.exports = {
   logFile: "renovate.log.json",
   assignees: ["elton.ton"],
   onboardingConfig: {
-    $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    extends: ["config:base"],
-    packageRules: [
-      {
-        matchDepTypes: ["dependencies"],
-        matchUpdateTypes: ["minor", "major", "patch", "pin", "digest"],
-        matchPackageNames: ["sc-game-base"],
-        excludePackageNames: ["*"]
-      },
-    ],
-    dependencyDashboard: true
+    extends: ["local>l1/renovate"],
   },
   npmrc: "registry=http://npm.lumigame.com/",
 };
