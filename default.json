@@ -3,7 +3,11 @@
   "extends": [":dependencyDashboard"],
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
       "matchPackageNames": [
         "sc-game-base",
