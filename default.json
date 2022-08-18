@@ -5,7 +5,7 @@
     {
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackagePatterns": ["*"],
+      "matchPackagePatterns": ["^sc"],
       "groupName": "all dependencies"
     }
   ]
