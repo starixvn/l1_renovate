@@ -3,28 +3,12 @@
   "extends": [":dependencyDashboard"],
   "assignees": ["elton.ton"],
   "reviewers": ["vivian.nguyen", "ricky.nguyen"],
-/*   "packageRules": [
-         {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["minor", "patch", "pin"],
-      "matchPackagePatterns": ["*"],
-      "groupName": "Other dependencies - minor update",
-      "rangeStrategy": "auto"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["major"],
-      "matchPackagePatterns": ["*"],
-      "groupName": "Other dependencies - major update",
-      "rangeStrategy": "auto"
-    }, 
+  "packageRules": [
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "pin"],
-      "matchPackagePatterns": ["^sc"],
+      "matchPackagePatterns": ["*"],
       "groupName": "SC dependencies"
     },
     {
@@ -33,5 +17,5 @@
       "excludePackagePatterns": ["^sc"],
       "enabled": false
     }
-  ] */
+  ]
 }
