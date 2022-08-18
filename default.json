@@ -2,13 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":dependencyDashboard"],
   "packageRules": [
-    {
+/*     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - minor update",
-      "rangeStrategy": "bump "
+      "rangeStrategy": "auto"
     },
     {
       "matchManagers": ["npm"],
@@ -17,14 +17,13 @@
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - major update",
       "rangeStrategy": "auto"
-    },
+    }, */
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "pin"],
       "matchPackagePatterns": ["^sc"],
-      "groupName": "SC dependencies",
-      "allowedVersions": "3.0.8-beta.7"
+      "groupName": "SC dependencies"
     },
     {
       "matchManagers": ["npm"],
