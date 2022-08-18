@@ -29,6 +29,7 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
+      "excludePackagePatterns": ["^sc"],
       "enabled": false
     }
   ]
