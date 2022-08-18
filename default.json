@@ -3,19 +3,10 @@
   "extends": [":dependencyDashboard"],
   "packageRules": [
     {
-      "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - minor update",
-      "rangeStrategy": "auto"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["major"],
-      "matchPackagePatterns": ["*"],
-      "groupName": "Other dependencies - major update",
       "rangeStrategy": "auto"
     },
 
