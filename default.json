@@ -5,16 +5,29 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "excludePackagePatterns": ["^sc"],
+      "groupName": "Other dependencies - minor update"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
+      "excludePackagePatterns": ["^sc"],
+      "groupName": "Other dependencies - major update"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "pin"],
-      "matchPackagePatterns": ["*"],
-      "groupName": "all dependencies"
+      "matchPackagePatterns": ["^sc"],
+      "groupName": "SC dependencies"
     },
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "enabled": false,
-      "groupName": "all dependencies"
+      "enabled": false
     }
   ]
 }
