@@ -1,25 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": [":dependencyDashboard"],
   "packageRules": [
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["devDependencies"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackageNames": ["sc-game-service-integration-utils"],
-      "groupName": "Dependencies"
-    },
     {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackageNames": ["sc-game-base"],
+      "matchPackageNames": [
+        "sc-game-base",
+        "sc-game-service-integration-utils"
+      ],
       "groupName": "Dependencies"
     }
-  ],
-  "dependencyDashboard": true
+  ]
 }
