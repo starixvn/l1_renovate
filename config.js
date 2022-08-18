@@ -3,8 +3,6 @@ module.exports = {
   endpoint: "https://git3.nexdev.net/api/v4/",
   includeForks: true,
   logFile: "renovate.log.json",
-  assignees: ["elton.ton"],
-  reviewers: ["vivian.nguyen", "ricky.nguyen"],
   onboardingConfig: {
     extends: ["local>l1/renovate"],
   },
