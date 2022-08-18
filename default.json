@@ -4,17 +4,28 @@
   "assignees": ["elton.ton"],
   "reviewers": ["vivian.nguyen", "ricky.nguyen"],
   "packageRules": [
-    {
+    /*     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor", "major", "patch", "pin"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": ["*"],
-      "groupName": "SC dependencies"
+      "groupName": "Other dependencies - minor update",
+      "rangeStrategy": "auto"
     },
     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["devDependencies"],
-      "groupName": "Dev dependencies"
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["*"],
+      "groupName": "Other dependencies - major update",
+      "rangeStrategy": "auto"
+    }, */
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "all dependencies",
+      "groupSlug": "all"
     }
   ]
 }
