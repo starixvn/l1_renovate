@@ -3,10 +3,18 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "enabled": false
+    },
+    {
+      //"matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackageNames": ["sc-game-base", "sc-game-service-integration-utils"],
-      "excludePackageNames": ["*"],
+      "matchPackageNames": [
+        "sc-game-base",
+        "sc-game-service-integration-utils"
+      ],
+      //"excludePackageNames": ["*"],
       "groupName": "Dependencies"
     }
   ],
