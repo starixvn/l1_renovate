@@ -7,7 +7,8 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "excludePackagePatterns": ["^sc"],
-      "groupName": "Other dependencies - minor update"
+      "groupName": "Other dependencies - minor update",
+      "rangeStrategy": "update-lockfile"
     },
     {
       "matchManagers": ["npm"],
