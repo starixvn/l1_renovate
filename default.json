@@ -4,6 +4,12 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
       "matchPackagePatterns": ["^sc"],
       "groupName": "all dependencies"
