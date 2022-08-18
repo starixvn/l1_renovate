@@ -7,9 +7,8 @@
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - minor update",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "bump"
     },
-
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
