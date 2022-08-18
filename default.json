@@ -8,11 +8,16 @@
       "enabled": false
     },
     {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackageNames": [
-        "sc-game-base",
-        "sc-game-service-integration-utils"
-      ],
+      "matchPackageNames": ["sc-game-service-integration-utils"],
+      "groupName": "Dependencies"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "major", "patch", "digest"],
+      "matchPackageNames": ["sc-game-base"],
       "groupName": "Dependencies"
     }
   ]
