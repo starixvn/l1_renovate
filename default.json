@@ -4,8 +4,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "excludePackageNames": ["*"],
-      "groupName": "Dependencies"
+      "enabled": false
     },
     {
       "matchDepTypes": ["dependencies"],
