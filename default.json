@@ -13,7 +13,8 @@
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "enabled": false
+      "enabled": false,
+      "groupName": "all dependencies"
     }
   ]
 }
