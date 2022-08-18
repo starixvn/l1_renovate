@@ -5,6 +5,11 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
       "matchPackageNames": ["sc-game-service-integration-utils"],
       "groupName": "Dependencies"
