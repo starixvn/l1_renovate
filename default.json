@@ -3,8 +3,8 @@
   "extends": [":dependencyDashboard"],
   "assignees": ["elton.ton"],
   "reviewers": ["vivian.nguyen", "ricky.nguyen"],
-  "packageRules": [
-    /*     {
+/*   "packageRules": [
+         {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
@@ -19,13 +19,19 @@
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - major update",
       "rangeStrategy": "auto"
-    }, */
+    }, 
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "groupName": "all dependencies",
-      "groupSlug": "all"
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["minor", "major", "patch", "pin"],
+      "matchPackagePatterns": ["^sc"],
+      "groupName": "SC dependencies"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "excludePackagePatterns": ["^sc"],
+      "enabled": false
     }
-  ]
+  ] */
 }
