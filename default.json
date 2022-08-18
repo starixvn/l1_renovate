@@ -3,13 +3,9 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "enabled": false
-    },
-    {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
-      "matchPackageNames": ["sc-game-base"],
+      "matchPackageNames": ["sc-game-base", "sc-game-service-integration-utils"],
       "excludePackageNames": ["*"],
       "groupName": "Dependencies"
     }
