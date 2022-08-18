@@ -3,12 +3,14 @@
   "extends": [":dependencyDashboard"],
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": ["*"],
       "groupName": "Other dependencies - minor update",
       "rangeStrategy": "bump"
     },
+
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
