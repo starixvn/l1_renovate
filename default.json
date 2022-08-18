@@ -4,13 +4,15 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "excludePackageNames": ["*"]
+      "excludePackageNames": ["*"],
+      "groupName": "Dependencies"
     },
     {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "major", "patch", "digest"],
       "matchPackageNames": ["sc-game-base"],
-      "excludePackageNames": ["*"]
+      "excludePackageNames": ["*"],
+      "groupName": "Dependencies"
     }
   ],
   "dependencyDashboard": true

@@ -4,6 +4,7 @@ module.exports = {
   includeForks: true,
   logFile: "renovate.log.json",
   assignees: ["elton.ton"],
+  reviewers: ["vivian.nguyen"],
   onboardingConfig: {
     extends: ["local>l1/renovate"],
   },
