@@ -9,7 +9,7 @@
       "matchPackagePatterns": ["*"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "Other dependencies - minor update",
-      "rangeStrategy": "update-lockfile"
+      "rangeStrategy": "bump"
     },
     {
       "matchManagers": ["npm"],
@@ -29,7 +29,6 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
-      "excludePackagePatterns": ["^sc"],
       "enabled": false
     }
   ]
