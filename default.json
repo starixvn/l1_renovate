@@ -16,7 +16,8 @@
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "groupName": "devDependencies"
+      "groupName": "devDependencies",
+      "rangeStrategy": "auto"
     }
   ]
 }
