@@ -7,15 +7,28 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor", "major", "patch", "pin"],
-      "matchPackagePatterns": ["*"],
-      "groupName": "SC dependencies"
+      "matchUpdateTypes": ["minor", "patch", "pin", "major"],
+      "matchPackagePatterns": "^sc",
+      "groupName": "SC dependencies",
+      "rangeStrategy": "auto"
     },
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "enabled": false
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "groupName": "devDependencies",
+      "commitMessagePrefix": "[Minor]",
+      "rangeStrategy": "auto"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "excludePackagePatterns": ["^sc"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "devDependencies",
+      "commitMessagePrefix": "[Major]",
+      "rangeStrategy": "auto"
     }
   ]
 }
