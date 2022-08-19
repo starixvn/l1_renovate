@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":dependencyDashboard"],
+  "extends": [":dependencyDashboard", "group:commitlintMonorepo"],
   "assignees": ["elton.ton"],
   "reviewers": ["vivian.nguyen", "ricky.nguyen"],
   "packageRules": [
@@ -17,7 +17,7 @@
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
       "matchUpdateTypes": ["minor", "patch", "pin"],
-      "groupName": "devDependencies",
+      "groupName": "minor devDependencies",
       "commitMessagePrefix": "[Minor]",
       "rangeStrategy": "auto"
     },
@@ -26,7 +26,7 @@
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
       "matchUpdateTypes": ["major"],
-      "groupName": "devDependencies",
+      "groupName": "major devDependencies",
       "commitMessagePrefix": "[Major]",
       "rangeStrategy": "auto"
     }
