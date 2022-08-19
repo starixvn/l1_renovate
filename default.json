@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":dependencyDashboard", "group:commitlintMonorepo"],
+  "extends": [":dependencyDashboard"],
   "assignees": ["elton.ton"],
   "reviewers": ["vivian.nguyen", "ricky.nguyen"],
   "packageRules": [
@@ -15,6 +15,7 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "major"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
       "rangeStrategy": "auto"
