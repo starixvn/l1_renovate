@@ -16,8 +16,7 @@
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "groupName": "devDependencies",
-      "rangeStrategy": "update-lockfile"
+      "groupName": "devDependencies"
     }
   ]
 }
