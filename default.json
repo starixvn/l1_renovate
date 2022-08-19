@@ -15,10 +15,9 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "major"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "update-lockfile"
     }
   ]
 }
