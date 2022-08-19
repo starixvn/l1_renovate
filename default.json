@@ -16,18 +16,7 @@
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
-      "matchUpdateTypes": ["minor", "patch", "pin"],
-      "groupName": "minor devDependencies",
-      "commitMessagePrefix": "[Minor]",
-      "rangeStrategy": "auto"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["devDependencies"],
-      "excludePackagePatterns": ["^sc"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "major devDependencies",
-      "commitMessagePrefix": "[Major]",
+      "groupName": "devDependencies",
       "rangeStrategy": "auto"
     }
   ]
