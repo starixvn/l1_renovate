@@ -1,6 +1,4 @@
 include:
-  - project: 'l1/renovate-bot/renovate-runner-template'
-    file: '/templates/renovate-dind.gitlab-ci.yml'
-    ref: "main"
+  - remote: "https://gitlab.com/renovate-bot/renovate-runner/-/raw/main/templates/renovate-dind.gitlab-ci.yml"
 variables: 
   RENOVATE_ONBOARDING_CONFIG: ""
