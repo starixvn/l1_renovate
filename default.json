@@ -7,7 +7,7 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "major"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
       "rangeStrategy": "auto"
