@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":dependencyDashboard"],
-  "assignees": ["elton.ton"],
-  "reviewers": ["vivian.nguyen", "ricky.nguyen"],
   "packageRules": [
     {
       "matchManagers": ["npm"],
