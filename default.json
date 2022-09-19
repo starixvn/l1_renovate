@@ -9,7 +9,8 @@
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
       "rangeStrategy": "auto",
-      "automerge": true
+      "automerge": true,
+      "schedule": ["after 5pm"]
     },
     {
       "matchManagers": ["npm"],
@@ -17,7 +18,8 @@
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
       "rangeStrategy": "auto",
-      "automerge": true
+      "automerge": true,
+      "extends": ["schedule:monthly"]
     }
   ]
 }
