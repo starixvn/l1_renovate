@@ -20,6 +20,14 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "excludePackagePatterns": "^sc",
+      "rangeStrategy": "auto",
+      "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
