@@ -9,8 +9,14 @@
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
       "rangeStrategy": "auto",
-      "automerge": true,
-      "schedule": ["after 5pm"]
+      "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "excludePackagePatterns": "^sc",
+      "rangeStrategy": "auto",
+      "extends": ["schedule:weekends"]
     },
     {
       "matchManagers": ["npm"],
