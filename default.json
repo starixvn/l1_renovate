@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":dependencyDashboard", ":automergeAll"],
+  "extends": [":dependencyDashboard"],
   "packageRules": [
     {
       "matchManagers": ["npm"],
@@ -8,14 +8,16 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "auto",
+      "automerge": true
     },
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "auto",
+      "automerge": true
     }
   ]
 }
