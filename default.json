@@ -33,7 +33,7 @@
       "groupName": "devDependencies",
       "rangeStrategy": "auto",
       "automerge": true,
-      "extends": ["schedule:weekends"]
+      "extends": ["schedule:monthly"]
     }
   ]
 }
