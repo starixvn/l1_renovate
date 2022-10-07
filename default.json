@@ -14,6 +14,7 @@
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
       "excludePackagePatterns": "^sc",
       "rangeStrategy": "auto",
       "extends": ["schedule:weekends"]
