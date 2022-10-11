@@ -4,3 +4,5 @@ include:
     ref: "main"
 variables: 
   RENOVATE_ONBOARDING_CONFIG: ""
+tags:
+  - renovate
