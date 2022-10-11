@@ -2,7 +2,8 @@ include:
   - project: 'l1/renovate-bot/renovate-runner-template'
     file: '/templates/renovate-dind.gitlab-ci.yml'
     ref: "main"
+    tags:
+      - renovate
 variables: 
   RENOVATE_ONBOARDING_CONFIG: ""
-tags:
-  - renovate
+
