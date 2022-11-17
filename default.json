@@ -24,7 +24,7 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": "^sc",
-      "rangeStrategy": "update-lockfile",
+      "rangeStrategy": "bump",
       "automerge": true
     },
     {
