@@ -16,14 +16,17 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
       "excludePackagePatterns": "^sc",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "auto",
+      "extends": ["schedule:weekends"]
     },
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": "^sc",
+      "rangeStrategy": "bump",
       "automerge": true
+
     },
     {
       "matchManagers": ["npm"],
