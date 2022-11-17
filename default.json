@@ -24,7 +24,6 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": "^sc",
-      "rangeStrategy": "bump",
       "automerge": true
     },
     {
