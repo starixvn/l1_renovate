@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":dependencyDashboard"],
+  "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
       "matchManagers": ["npm"],
@@ -24,7 +25,7 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": "^sc",
-      "rangeStrategy": "bump",
+      "rangeStrategy": "update-lockfile",
       "automerge": true
 
     },
