@@ -9,7 +9,6 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
-      "rangeStrategy": "auto",
       "automerge": true
     },
     {
@@ -17,7 +16,6 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
       "excludePackagePatterns": "^sc",
-      "rangeStrategy": "auto",
       "extends": ["schedule:weekends"]
     },
     {
@@ -34,7 +32,6 @@
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
-      "rangeStrategy": "auto",
       "automerge": true,
       "extends": ["schedule:monthly"]
     }
