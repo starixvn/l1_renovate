@@ -24,6 +24,7 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": "^sc",
       "rangeStrategy": "update-lockfile",
+      "groupName": "External dependencies",
       "automerge": true
 
     },
