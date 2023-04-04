@@ -1,6 +1,6 @@
 include:
   - project: 'l1/renovate-bot/renovate-runner-template'
-    file: '/templates/renovate-dind.gitlab-ci.yml'
+    file: '/templates/renovate.gitlab-ci.yml'
     ref: "main"
     tags:
       - renovate
