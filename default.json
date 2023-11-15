@@ -4,6 +4,7 @@
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
+      "description": "Only SC dependencies & devDependencies",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
@@ -12,23 +13,26 @@
       "automerge": true
     },
     {
+      "description": "Major version upgrade - Other dependencies except SC",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
-      "excludePackagePatterns": "^sc",
+      "excludePackagePatterns": ["^sc"],
       "extends": ["schedule:weekends"]
     },
     {
+      "description": "Minor/patch version upgrade - Other dependencies except SC",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "excludePackagePatterns": "^sc",
+      "excludePackagePatterns": ["^sc"],
       "rangeStrategy": "update-lockfile",
-      "groupName": "External dependencies",
+      "groupName": "External dependencies (non-major)",
       "automerge": true
 
     },
     {
+      "description": "Dev dependencies",
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "excludePackagePatterns": ["^sc"],
