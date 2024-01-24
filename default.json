@@ -22,6 +22,15 @@
       "extends": ["schedule:weekends"]
     },
     {
+      "description": "Major version upgrade - Other dependencies except SC",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["Major"],
+      "excludePackagePatterns": ["^sc"],
+      "rangeStrategy": "update-lockfile",
+      "extends": ["schedule:weekends"]
+    },
+    {
       "description": "Minor/patch version upgrade - Other dependencies except SC",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies"],
@@ -29,8 +38,8 @@
       "excludePackagePatterns": ["^sc"],
       "rangeStrategy": "update-lockfile",
       "groupName": "External dependencies (non-major)",
-      "automerge": true
-
+      "automerge": true,
+      "extends": ["schedule:weekends"]
     },
     {
       "description": "Dev dependencies",
