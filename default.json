@@ -19,14 +19,6 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
       "excludePackagePatterns": ["^sc"],
-      "extends": ["schedule:weekends"]
-    },
-    {
-      "description": "Major version upgrade - Other dependencies except SC",
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["Major"],
-      "excludePackagePatterns": ["^sc"],
       "rangeStrategy": "update-lockfile",
       "extends": ["schedule:weekends"]
     },
