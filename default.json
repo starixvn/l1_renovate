@@ -8,7 +8,7 @@
       "description": "Only SC dependencies & devDependencies",
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest", "resolutions"],
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
       "automerge": true
