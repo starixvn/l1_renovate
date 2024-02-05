@@ -11,7 +11,7 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "major", "digest"],
       "matchPackagePatterns": "^sc",
       "groupName": "SC dependencies",
-      "automerge": true
+      "automerge": false
     },
     {
       "description": "Major version upgrade - Other dependencies except SC",
