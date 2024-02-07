@@ -37,10 +37,11 @@
       "description": "Dev dependencies",
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies",
       "automerge": true,
-      "extends": ["schedule:monthly"]
+      "extends": ["schedule:weekends"]
     }
   ]
 }
