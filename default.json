@@ -34,12 +34,22 @@
       "extends": ["schedule:weekends"]
     },
     {
-      "description": "Dev dependencies",
+      "description": "Minor/patch version upgrade - Dev dependencies",
       "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": ["^sc"],
-      "groupName": "devDependencies",
+      "groupName": "devDependencies (non-major)",
       "automerge": true,
+      "extends": ["schedule:weekends"]
+    },
+    {
+      "description": "Major version upgrade - Dev dependencies",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major"],
+      "excludePackagePatterns": ["^sc"],
+      "automerge": false,
       "extends": ["schedule:weekends"]
     }
   ]
