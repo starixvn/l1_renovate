@@ -30,7 +30,7 @@
       "excludePackagePatterns": ["^sc"],
       "rangeStrategy": "update-lockfile",
       "groupName": "External dependencies (non-major)",
-      "automerge": true,
+      "automerge": false,
       "extends": ["schedule:weekends"]
     },
     {
