@@ -20,7 +20,8 @@
       "matchUpdateTypes": ["major"],
       "excludePackagePatterns": ["^sc"],
       "rangeStrategy": "update-lockfile",
-      "extends": ["schedule:weekends"]
+      "extends": ["schedule:weekends"],
+      "automerge": false
     },
     {
       "description": "Minor/patch version upgrade - Other dependencies except SC",
@@ -40,7 +41,7 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "excludePackagePatterns": ["^sc"],
       "groupName": "devDependencies (non-major)",
-      "automerge": true,
+      "automerge": false,
       "extends": ["schedule:weekends"]
     },
     {
